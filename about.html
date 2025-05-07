@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About Us | Pulse</title>
+  <meta content="Learn about our medical billing company, our team, and our locations." name="description">
+  <meta content="medical billing, healthcare, RCM, team, locations" name="keywords">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="header-container"></div>
+  <div id="nav-container"></div>
+  <main id="main">
+    <section class="about section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>Your Trusted Partner in Medical Billing</p>
+        </div>
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>We are a leading medical billing company dedicated to simplifying revenue cycle management for healthcare providers. Our team of experts ensures accurate and timely billing, helping you focus on patient care.</p>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>With years of experience and a commitment to excellence, we provide tailored solutions to meet your practice's unique needs. Our advanced technology and dedicated team ensure maximum revenue recovery and compliance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Our Team</h2>
+          <p>Meet Our Expert Team</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>John Doe</h4>
+                <span>CEO</span>
+                <p>With over 20 years of experience in healthcare management, John leads our company with a vision for innovation and excellence.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Jane Smith</h4>
+                <span>COO</span>
+                <p>Jane oversees our operations, ensuring seamless service delivery and client satisfaction.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Mike Johnson</h4>
+                <span>CTO</span>
+                <p>Mike drives our technological advancements, ensuring we stay at the forefront of medical billing innovation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="locations section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Our Locations</h2>
+          <p>Find Us Across the Globe</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="location-box">
+              <h3>New Market, MD</h3>
+              <p>#03-01, 6033, Pecking Stone Steet, New Market, MD-21774, USA</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="location-box">
+              <h3>Bengaluru, India</h3>
+              <p>#03-01, Brigade Triumph, Sector B, Hebbal Kempapura, Bengaluru, Karnataka 560092</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="location-box">
+              <h3>Mysore, India</h3>
+              <p>#984, 1st main, near vivekananda circle. Vivekananda Nagar Mysore 570023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-container"></div>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
