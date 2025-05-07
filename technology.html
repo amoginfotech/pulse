@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Technology Solutions | Pulse</title>
+  <meta content="Advanced technology solutions for medical billing and revenue cycle management" name="description">
+  <meta content="medical billing technology, RCM automation, healthcare integration" name="keywords">
+  
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Custom CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header-container"></div>
+  <div id="nav-container"></div>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
+  <main id="main">
+    <!-- Technology Hero Section -->
+    <section class="technology-hero d-flex align-items-center" style="margin-top: 72px; padding: 80px 0; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/hero-img.png'); background-size: cover; background-position: center;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 d-flex flex-column justify-content-center text-white">
+            <h1 class="display-5 fw-bold mb-4" style="color: white;">Technology-Driven Medical Billing Solutions</h1>
+            <p class="lead mb-4">Leverage our advanced technology platform to streamline your revenue cycle management and improve practice efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Content Section -->
+    <section class="technology-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Our Technology Solutions</h2>
+            <p>We provide cutting-edge technology solutions designed to optimize your medical billing processes:</p>
+            <ul>
+              <li>Automated claim submission and tracking</li>
+              <li>Real-time analytics and reporting</li>
+              <li>Seamless integration with practice management systems</li>
+              <li>Secure patient data management</li>
+              <li>AI-powered coding assistance</li>
+              <li>Mobile-friendly patient portal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

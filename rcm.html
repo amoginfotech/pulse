@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>RCM Services | Pulse</title>
+  <meta content="Professional Revenue Cycle Management services for healthcare providers" name="description">
+  <meta content="RCM, revenue cycle management, medical billing, claims processing" name="keywords">
+  
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Custom CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header-container"></div>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
+  <main id="main">
+    <!-- RCM Hero Section -->
+    <section class="rcm-hero d-flex align-items-center" style="margin-top: 72px; padding: 80px 0; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/hero-img.png'); background-size: cover; background-position: center;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 d-flex flex-column justify-content-center text-white">
+            <h1 class="display-5 fw-bold mb-4">Revenue Cycle Management Services</h1>
+            <p class="lead mb-4">Optimize your revenue cycle with our comprehensive RCM solutions tailored to your practice's needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RCM Services Section -->
+    <section class="rcm-services section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Our RCM Services</h2>
+          <p>End-to-end solutions to maximize your revenue potential</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-cash-coin"></i>
+              </div>
+              <h3>Claims Processing</h3>
+              <p>Accurate and timely submission of medical claims to payers.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-credit-card"></i>
+              </div>
+              <h3>Payment Posting</h3>
+              <p>Efficient processing and reconciliation of payments.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <h3>Denial Management</h3>
+              <p>Proactive approach to reduce claim denials and maximize revenue.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/+919108873817?text=Hi%20Algoprime,%20I'm%20interested%20in%20your%20RCM%20services" class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
