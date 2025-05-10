@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Cards | Pulse</title>
+  <meta content="Cards for Pulse Medical Automation" name="description">
+  <meta content="cards, medical billing, RCM" name="keywords">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header-container"></div>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
+  <main id="main">
+    <section class="services-section py-5">
+      <div class="container">
+        <div class="row g-4 mb-5">
+          <div class="col-md-4">
+
+       
+          
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

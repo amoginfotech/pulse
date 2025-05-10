@@ -20,12 +20,10 @@
 
   <!-- Custom CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div id="header-container"></div>
-  <div id="nav-container"></div>
   <script>
     fetch('header.html')
       .then(response => response.text())
@@ -35,33 +33,197 @@
   </script>
 
   <main id="main">
-    <!-- Technology Hero Section -->
-    <section class="technology-hero d-flex align-items-center" style="margin-top: 72px; padding: 80px 0; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/hero-img.png'); background-size: cover; background-position: center;">
+    <section class="services-hero d-flex align-items-center" style="margin-top: 72px; padding: 80px 0; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/technology1.png'); background-size: cover; background-position: center;">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 d-flex flex-column justify-content-center text-white">
-            <h1 class="display-5 fw-bold mb-4" style="color: white;">Technology-Driven Medical Billing Solutions</h1>
-            <p class="lead mb-4">Leverage our advanced technology platform to streamline your revenue cycle management and improve practice efficiency.</p>
+            <h1 class="display-5 fw-bold mb-4" style="color: white;">Advanced Medical Billing Technology</h1>
+            <p class="lead mb-4">Streamline your healthcare operations with our cutting-edge technology solutions designed for modern medical billing.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Technology Content Section -->
-    <section class="technology-content">
+    <div class="container mt-5 mb-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-lg hover-lift transition">
+            <div class="card-body p-4">
+              <h2 class="display-6 fw-bold mb-4">Our Technology Platform</h2>
+              <p class="lead text-muted mb-8">Our advanced technology platform integrates seamlessly with your existing systems to provide comprehensive medical billing solutions. From automated claim processing to real-time analytics, our platform leverages cutting-edge technology to optimize your revenue cycle management.</p>
+              <p class="lead text-muted mb-8">With AI-powered features and cloud-based accessibility, we ensure your practice stays ahead of industry standards while maintaining the highest levels of security and compliance in healthcare technology.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-lg hover-lift transition">
+            <div class="card-body p-4" style="margin-top: 0.2in;">
+              <img src="assets/img/technology1.jpg" alt="Technology Platform" class="img-fluid mb-4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="services-section py-5">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>Our Technology Solutions</h2>
-            <p>We provide cutting-edge technology solutions designed to optimize your medical billing processes:</p>
-            <ul>
-              <li>Automated claim submission and tracking</li>
-              <li>Real-time analytics and reporting</li>
-              <li>Seamless integration with practice management systems</li>
-              <li>Secure patient data management</li>
-              <li>AI-powered coding assistance</li>
-              <li>Mobile-friendly patient portal</li>
-            </ul>
+        <div class="row mb-5">
+          <div class="col-lg-12 text-left">
+            <h3>Core Technology Features</h3>
+            <div class="row g-4 mb-5">
+              <div class="col-md-6">
+                <div class="card h-100 shadow-lg hover-lift transition">
+                  <div class="card-body p-4">
+                    <div class="icon-box mb-4">
+                      <i class="bi bi-cloud-check text-primary fs-1"></i>
+                    </div>
+                    <h3 class="h4 mb-3 text-primary">Cloud-Based Platform</h3>
+                    <p class="text-muted">Access your billing system anywhere, anytime with our secure cloud infrastructure.</p>
+                    <ul class="list-unstyled">
+                      <li>24/7 system availability</li>
+                      <li>Automatic backups and updates</li>
+                      <li>Scalable infrastructure</li>
+                      <li>Multi-device accessibility</li>
+                      <li>Real-time synchronization</li>
+                      <li>Disaster recovery protection</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card h-100 shadow-lg hover-lift transition">
+                  <div class="card-body p-4">
+                    <div class="icon-box mb-4">
+                      <i class="bi bi-shield-check text-primary fs-1"></i>
+                    </div>
+                    <h3 class="h4 mb-3 text-primary">Security & Compliance</h3>
+                    <p class="text-muted">Industry-leading security measures ensuring HIPAA compliance and data protection.</p>
+                    <ul class="list-unstyled">
+                      <li>HIPAA-compliant infrastructure</li>
+                      <li>End-to-end encryption</li>
+                      <li>Multi-factor authentication</li>
+                      <li>Regular security audits</li>
+                      <li>Access control management</li>
+                      <li>Secure data transmission</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <h3>Automation & Integration</h3>
+              <div class="col-md-6">
+                <div class="card h-100 shadow-lg hover-lift transition">
+                  <div class="card-body p-4">
+                    <div class="icon-box mb-4">
+                      <i class="bi bi-robot text-primary fs-1"></i>
+                    </div>
+                    <h3 class="h4 mb-3 text-primary">AI-Powered Automation</h3>
+                    <p class="text-muted">Intelligent automation tools that streamline billing processes and reduce manual work.</p>
+                    <ul class="list-unstyled">
+                      <li>Automated claim submission</li>
+                      <li>Smart error detection</li>
+                      <li>Predictive analytics</li>
+                      <li>Payment posting automation</li>
+                      <li>Denial pattern recognition</li>
+                      <li>Workflow optimization</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card h-100 shadow-lg hover-lift transition">
+                  <div class="card-body p-4">
+                    <div class="icon-box mb-4">
+                      <i class="bi bi-diagram-3 text-primary fs-1"></i>
+                    </div>
+                    <h3 class="h4 mb-3 text-primary">System Integration</h3>
+                    <p class="text-muted">Seamless integration capabilities with major EHR/EMR systems and practice management software.</p>
+                    <ul class="list-unstyled">
+                      <li>EHR/EMR integration</li>
+                      <li>Practice management connectivity</li>
+                      <li>API-based integration</li>
+                      <li>Custom workflow mapping</li>
+                      <li>Real-time data sync</li>
+                      <li>Legacy system support</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <h3>Analytics & Reporting</h3>
+              <div class="col-md-12">
+                <div class="card h-100 shadow-lg hover-lift transition">
+                  <div class="card-body p-4">
+                    <div class="icon-box mb-4">
+                      <i class="bi bi-graph-up text-primary fs-1"></i>
+                    </div>
+                    <h3 class="h4 mb-3 text-primary">Advanced Analytics Dashboard</h3>
+                    <p class="text-muted">Comprehensive analytics and reporting tools providing actionable insights for your practice.</p>
+                    <ul class="list-unstyled">
+                      <li>Real-time performance metrics</li>
+                      <li>Custom report generation</li>
+                      <li>Revenue trend analysis</li>
+                      <li>Denial rate tracking</li>
+                      <li>Provider performance insights</li>
+                      <li>Compliance monitoring</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-4 mb-5">
+                <div class="col-12 mb-4">
+                  <h3 class="h4 text-primary text-center">Technology Benefits</h3>
+                  <p class="text-muted text-center">Maximize your practice efficiency with our technology solutions</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="card h-100 shadow-lg hover-lift transition">
+                    <div class="card-body p-4">
+                      <div class="icon-box mb-4">
+                        <i class="bi bi-lightning-charge text-primary fs-1"></i>
+                      </div>
+                      <h4 class="h5 mb-3 text-primary">Increased Efficiency</h4>
+                      <p class="text-muted">Streamlined workflows and automated processes save time and resources.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card h-100 shadow-lg hover-lift transition">
+                    <div class="card-body p-4">
+                      <div class="icon-box mb-4">
+                        <i class="bi bi-cash-coin text-primary fs-1"></i>
+                      </div>
+                      <h4 class="h5 mb-3 text-primary">Revenue Growth</h4>
+                      <p class="text-muted">Optimized billing processes lead to improved collections and revenue.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card h-100 shadow-lg hover-lift transition">
+                    <div class="card-body p-4">
+                      <div class="icon-box mb-4">
+                        <i class="bi bi-shield-check text-primary fs-1"></i>
+                      </div>
+                      <h4 class="h5 mb-3 text-primary">Enhanced Security</h4>
+                      <p class="text-muted">Advanced security measures protect sensitive healthcare data.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card h-100 shadow-lg hover-lift transition">
+                    <div class="card-body p-4">
+                      <div class="icon-box mb-4">
+                        <i class="bi bi-graph-up text-primary fs-1"></i>
+                      </div>
+                      <h4 class="h5 mb-3 text-primary">Data Insights</h4>
+                      <p class="text-muted">Actionable analytics for informed decision-making.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

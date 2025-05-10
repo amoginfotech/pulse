@@ -3,221 +3,351 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Medical Billing Services - Algoprime</title>
-  <meta content="Comprehensive medical billing and revenue cycle management services for healthcare providers" name="description">
-  <meta content="medical billing services, RCM services, healthcare billing, revenue cycle management" name="keywords">
-  
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <title>Medical Billing Services | Pulse</title>
+  <meta content="Comprehensive medical billing services for healthcare providers" name="description">
+  <meta content="medical billing, RCM, credentialing, compliance, EMR integration" name="keywords">
+  <link href="assets/css/main.css" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Custom CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/whatsapp.css" rel="stylesheet">
-  <link href="assets/css/sidebar.css" rel="stylesheet">
-  <script src="assets/js/sidebar.js" defer></script>
 </head>
 
 <body>
-  <button class="sidebar-toggle">
-    <i class="bi bi-list"></i>
-  </button>
- 
-  <!-- Header -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo.png" alt="Algoprime Logo">
-        <h1 class="sitename">Pulse</h1>
-      </a>
-
-      <div id="header-container"></div>
-      <div id="nav-container"></div>
-          <script>
-            fetch('header.html')
-              .then(response => response.text())
-              .then(data => {
-                document.getElementById('header-container').innerHTML = data;
-              });
-          </script>
-    </div>
-  </header>
+  <div id="header-container"></div>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
 
   <main id="main">
-    <!-- Services Hero Section -->
+    <!-- Hero Section -->
     <section class="services-hero d-flex align-items-center" style="margin-top: 72px; padding: 80px 0; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/hero-img.png'); background-size: cover; background-position: center;">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 d-flex flex-column justify-content-center text-white">
-            <h1 class="display-5 fw-bold mb-4" style="color: white;">We Manage Your Medical Billing So You Can Focus on Patient Care</h1>
-            <p class="lead mb-4">Transform your revenue cycle management with our end-to-end billing solutions designed to maximize collections and streamline operations.</p>
-            <div class="d-flex gap-3">
-              <a href="index.html#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+            <h1 class="display-5 fw-bold mb-4" style="color: white;">Comprehensive Medical Billing Services</h1>
+            <p class="lead mb-4">End-to-end revenue cycle management and billing solutions for healthcare providers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RCM Section -->
+    <section class="py-5" style="margin: 80px 0;">
+      <div class="container">
+        <h2 class="text-center mb-5">Revenue Cycle Management (RCM)</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
+              <div class="card-body p-4">
+                <div class="icon-box mb-4">
+                  <i class="bi bi-person-check text-primary fs-1"></i>
+                </div>
+                <h3 class="h4 mb-3">Patient Access & Registration</h3>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Patient demographic entry</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Insurance verification</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Coverage limits verification</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Prior authorization</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
+              <div class="card-body p-4">
+                <div class="icon-box mb-4">
+                  <i class="bi bi-clipboard-data text-primary fs-1"></i>
+                </div>
+                <h3 class="h4 mb-3">Charge Capture & Entry</h3>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Encounter form review</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>CPT/ICD code mapping</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Service validation</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Specialty charge review</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
+              <div class="card-body p-4">
+                <div class="icon-box mb-4">
+                  <i class="bi bi-file-earmark-text text-primary fs-1"></i>
+                </div>
+                <h3 class="h4 mb-3">Claims Management</h3>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Clean claim creation</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Code validation</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Electronic submission</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Error resolution</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
+              <div class="card-body p-4">
+                <div class="icon-box mb-4">
+                  <i class="bi bi-credit-card text-primary fs-1"></i>
+                </div>
+                <h3 class="h4 mb-3">Payment Posting</h3>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>ERA/Manual EOB entry</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Insurance and patient payment posting</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Secondary claim submission</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Refund processing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
+              <div class="card-body p-4">
+                <div class="icon-box mb-4">
+                  <i class="bi bi-cash-stack text-primary fs-1"></i>
+                </div>
+                <h3 class="h4 mb-3">Accounts Receivable (A/R) Management</h3>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Insurance A/R aging analysis</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Follow-up for unpaid and underpaid claims</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Denial root cause identification</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Appeals with medical necessity documentation</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Patient follow-up and payment plans</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
+              <div class="card-body p-4">
+                <div class="icon-box mb-4">
+                  <i class="bi bi-shield-x text-primary fs-1"></i>
+                </div>
+                <h3 class="h4 mb-3">Denial Management</h3>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Automated and manual denial capture</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Categorization by denial type</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Root cause trend analysis</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Appeal letter generation and submission</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Payer follow-ups and escalation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
+              <div class="card-body p-4">
+                <div class="icon-box mb-4">
+                  <i class="bi bi-wallet2 text-primary fs-1"></i>
+                </div>
+                <h3 class="h4 mb-3">Patient Billing & Collections</h3>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Patient statements and invoices</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Phone/email reminders</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Payment portals and card-on-file systems</li>
+                  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Collection agency coordination</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Detailed Services Section -->
-    <section class="services-detail section-bg" style="padding: 60px 0;">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Our Medical Billing Services</h2>
-          <p>At Pulse, we offer end-to-end medical billing services designed to maximize revenue, reduce administrative burden, and ensure full compliance with healthcare regulations. Our comprehensive suite includes patient eligibility verification, accurate medical coding, charge entry, claim submission, payment posting, denial management, and AR follow-up. We leverage AI-powered tools and in-house claims settlement software to ensure fast, error-free processing and real-time visibility into billing workflows. Whether you're a clinic, diagnostic center, or specialty practice, our services are tailored to your unique needs — with seamless integration into any EHR or practice management system. With Pulse, you gain a trusted partner who handles your revenue cycle from start to finish, so you can focus on delivering exceptional patient care.</p>
-        </div>
-
-        <div class="row gy-4">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-box shadow-lg p-4 rounded-3">
-              <div class="icon-box bg-primary text-white p-3 rounded-circle mb-4">
-                <i class="bi bi-receipt-cutoff fs-2">  Pulse Claims</i>
+    <!-- Medical Coding Section -->
+    <section class="py-5 bg-light" style="margin: 80px 0;">
+      <div class="container">
+        <h2 class="text-center mb-5">Medical Coding & Complaince Services</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-6">
+            <div class="card shadow-lg hover-lift transition">
+              <div class="card-body p-4">
+                <h3 class="h4 mb-4">Comprehensive Coding Solutions</h3>
+                <ul class="list-unstyled">
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>ICD-10, CPT, and HCPCS coding</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Specialty-specific coding (e.g., cardiology, orthopedics, radiology)</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>EHR/EMR-based chart abstraction</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Real-time and batch coding</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Code validation and optimization</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>DRG and HCC coding (for hospitals and risk adjustment)</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Auditing and feedback for physician documentation</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Compliance with CMS/OIG/NCCI guidelines</li>
+                </ul>
               </div>
-              <h3 class="fw-bold mb-3">Claims Management</h3>
-              <ul class="list-unstyled">
-                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Electronic claims submission</li>
-                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Claims scrubbing and validation</li>
-                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Real-time claim status tracking</li>
-                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Secondary claims processing</li>
-              </ul>
-              <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
             </div>
           </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-box shadow-lg p-4 rounded-3">
-              <i class="bi bi-currency-dollar fs-1"></i>
-              <h3>Payment Posting</h3>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check2"></i> ERA/EOB processing</li>
-                <li><i class="bi bi-check2"></i> Payment reconciliation</li>
-                <li><i class="bi bi-check2"></i> Patient payment posting</li>
-                <li><i class="bi bi-check2"></i> Credit balance management</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-box shadow-lg p-4 rounded-3">
-              <i class="bi bi-shield-check fs-1"></i>
-              <h3>Denial Management</h3>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check2"></i> Root cause analysis</li>
-                <li><i class="bi bi-check2"></i> Appeals processing</li>
-                <li><i class="bi bi-check2"></i> Denial prevention strategies</li>
-                <li><i class="bi bi-check2"></i> Recovery optimization</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-box shadow-lg p-4 rounded-3">
-              <i class="bi bi-person-badge fs-1"></i>
-              <h3>Credentialing Services</h3>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check2"></i> Provider enrollment</li>
-                <li><i class="bi bi-check2"></i> Credential verification</li>
-                <li><i class="bi bi-check2"></i> Payer enrollment</li>
-                <li><i class="bi bi-check2"></i> Ongoing maintenance</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-box shadow-lg p-4 rounded-3">
-              <i class="bi bi-graph-up fs-1"></i>
-              <h3>Revenue Analytics</h3>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check2"></i> Performance reporting</li>
-                <li><i class="bi bi-check2"></i> Revenue forecasting</li>
-                <li><i class="bi bi-check2"></i> KPI tracking</li>
-                <li><i class="bi bi-check2"></i> Trend analysis</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-box shadow-lg p-4 rounded-3">
-              <i class="bi bi-people fs-1"></i>
-              <h3>Patient Support</h3>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check2"></i> Insurance verification</li>
-                <li><i class="bi bi-check2"></i> Eligibility checking</li>
-                <li><i class="bi bi-check2"></i> Patient billing support</li>
-                <li><i class="bi bi-check2"></i> Payment plan setup</li>
-              </ul>
+          <div class="col-lg-6">
+            <div class="card shadow-lg hover-lift transition">
+              <div class="card-body p-4">
+                <h3 class="h4 mb-4">Compliance & Quality Assurance</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>HIPAA compliance (data security & access control)</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>CMS/OIG regulation alignment</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Internal audits (billing and coding accuracy)</ii>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Coding quality checks and scorecards</ii>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Periodic compliance training for staff</ii>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Support for RAC, MAC, and private payer audits</ii>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>SOP documentation and version control</ii>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Auditing services</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section class="why-us" style="padding: 60px 0;">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Why Choose Our Medical Billing Services</h2>
-          <p>Partner with us for optimal revenue cycle performance</p>
+    <!-- Credentialing Section -->
+    <section class="py-5" style="margin: 80px 0;">
+      <div class="container">
+        <h2 class="text-center mb-5">Credentialing & Enrollment</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
+              <div class="card-body p-4">
+                <div class="icon-box mb-4">
+                  <i class="bi bi-shield-check text-primary fs-1"></i>
+                </div>
+                <h3 class="h4 mb-3">Credentialing Services</h3>
+                <p>Ensure that healthcare providers are qualified and verified by third-party authorities to offer services.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Complete setup of NPI, CAQH, and licensing requirements for healthcare providers.</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Initial credentialing (NPI, CAQH setup, licensing)</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Re-credentialing and revalidation tracking</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Group/facility NPI and TIN enrollment</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>EFT/ERA setup and maintenance</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Hospital privileges and insurance paneling</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Follow-up on application status and escalations</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Document management and expiration tracking</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
+              <div class="card-body p-4">
+                <div class="icon-box mb-4">
+                  <i class="bi bi-file-earmark-text text-primary fs-1"></i>
+                </div>
+                <h3 class="h4 mb-3">Payer Enrollment Services</h3>
+                <p>Get providers enrolled with insurance companies to allow billing and reimbursement.</p>
+                <ul class="list-unstyled">
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Payer Applications & Submissions</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Payer enrollment (Medicare, Medicaid, BCBS, Aetna, Cigna, etc.)</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Individual and group TIN/NPI linking</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Online portal setup and submission handling</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Follow-up & Escalation</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Resolution of rejections or missing information</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>EFT & ERA Setup</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Insurance Paneling & Contracts</li>
+                  <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Reviewing and negotiating contract terms</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-box shadow-lg p-4 rounded-3">
-              <div class="icon-box bg-primary text-white p-3 rounded-circle mb-4">
-                <i class="bi bi-award fs-2"> Expertise</i>
+    <!-- Additional Services Section -->
+    <section class="py-5 bg-light" style="margin: 80px 0;">
+      <div class="container">
+        <h2 class="text-center mb-5">Additional Services</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
+              <div class="card-body p-4">
+                <div class="icon-box mb-4">
+                  <i class="bi bi-graph-up text-primary fs-1"></i>
+                </div>
+                <h3 class="h4 mb-3">Analytics & Reporting</h3>
+                <ul class="list-unstyled">
+                <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Monthly financial reports (charges, collections, adjustments)</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>A/R aging by payer, provider, or location</li>
+                        <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Denial rates, trends, and resolution metrics</li>
+                            <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Clean claim rate, first-pass resolution rate</li>
+                                <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Provider productivity analysis</li>
+                                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Payer performance benchmarking</li>
+                                        <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Custom dashboard creation (Excel, BI tools, PDFs)</li>
+                                            <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>On-demand and scheduled reporting</li>
+                                            </ul>
               </div>
-              <h3 class="fw-bold mb-3">Expertise & Experience</h3>
-              <p>Our certified billing specialists have extensive experience across multiple specialties and payer requirements.</p>
             </div>
           </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-box shadow-lg p-4 rounded-3">
-              <div class="icon-box bg-primary text-white p-3 rounded-circle mb-4">
-                <i class="bi bi-cpu fs-2"> Technology</i>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
+              <div class="card-body p-4">
+                <div class="icon-box mb-4">
+                  <i class="bi bi-laptop text-primary fs-1"></i>
+                </div>
+                <h3 class="h4 mb-3">EMR Integration</h3>
+                <ul class="list-unstyled">
+                <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>EMR setup and configuration for billing</li>
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Data extraction for coding and charge entry</li>
+                        <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Integration with clearinghouses (Availity, Office Ally, Change Healthcare, etc.)</li>
+                            <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Custom template creation for encounters</li>
+                                <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Automation of charge posting and payment processing</li>
+                                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Technical support for updates and error resolution</li>
+                                    <ul class="list-unstyled">
               </div>
-              <h3 class="fw-bold mb-3">Advanced Technology</h3>
-              <p>State-of-the-art RCM platform with AI-powered automation and real-time analytics.</p>
             </div>
           </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-box shadow-lg p-4 rounded-3">
-              <div class="icon-box bg-primary text-white p-3 rounded-circle mb-4">
-                <i class="bi bi-graph-up-arrow fs-2"> Result Oriented</i>
+        
+          <div class="col-md-4">
+            <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
+              <div class="card-body p-4">
+                <div class="icon-box mb-4">
+                  <i class="bi bi-star text-primary fs-1"></i>
+                </div>
+                <h3 class="h4 mb-3">Client Support & Account Management</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Dedicated account manager per client</li>
+                        <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Weekly/monthly review calls and performance check-ins</li>
+                            <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Escalation management and SLA tracking</li>
+                                <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Client onboarding and workflow documentation</li>
+                                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Billing SOP alignment with client operations</li>
+                                        <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Training for clinic/office staff on best practices</li>
+                                            </ul>
               </div>
-              <h3 class="fw-bold mb-3">Proven Results</h3>
-              <p>95%+ clean claim rate, reduced AR days, and significant increase in collections.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta" style="padding: 60px 0;">
-      <div class="container" data-aos="zoom-in">
-        <div class="row g-5">
-          <div class="col-lg-8 text-center text-lg-start">
-            <h3>Ready to Optimize Your Revenue Cycle?</h3>
-            <p>Contact us today for a free consultation and learn how our medical billing services can help your practice thrive.</p>
+     <!-- Additional Services Section -->
+     <section class="py-5 bg-light" style="margin: 80px 0;">
+        <div class="container">
+          <h2 class="text-center mb-5">Value-Added Services</h2>
+          <div class="col-md-12">
+            <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
+              <div class="card-body p-4">
+                <div class="icon-box mb-4">
+                  <i class="bi bi-star text-primary fs-1"></i>
+                </div>
+                <h3 class="h4 mb-3">Enhancements that differentiate premium billing providers.</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Practice benchmarking and consulting</li>
+                        <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Contract negotiation and fee schedule analysis</li>
+                            <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Credentialing alert system (for renewals)</li>
+                                <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Patient call center support (for billing queries)</li>
+                                    <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Business continuity and disaster recovery planning</li>
+                                        <li class="mb-3"><i class="bi bi-check2-circle text-primary me-2"></i>Marketing and growth strategy support for practices</li>
+                                            </ul>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4 text-center text-lg-end">
-            <a class="cta-btn align-middle" href="#contact">Contact Us Now</a>
           </div>
-        </div>
-      </div>
-    </section>
+          </section>
   </main>
 
-  <!-- Footer -->
   <div id="footer-container"></div>
   <script>
     fetch('footer.html')
@@ -226,21 +356,5 @@
         document.getElementById('footer-container').innerHTML = data;
       });
   </script>
-
-  <a href="https://wa.me/+919108873817?text=Hi%20Algoprime,%20I'm%20interested%20in%20your%20services" class="whatsapp-float" target="_blank">
-    <i class="bi bi-whatsapp"></i>
-  </a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
