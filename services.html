@@ -24,6 +24,7 @@
         document.getElementById('header-container').innerHTML = data;
       });
   </script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <main id="main">
     <!-- Hero Section -->
@@ -39,9 +40,65 @@
     </section>
 
     <!-- RCM Section -->
-    <section class="py-5" style="margin: 80px 0;">
+    <section class="py-5" style="margin: 1px 0;">
       <div class="container">
-        <h2 class="text-center mb-5">Revenue Cycle Management (RCM)</h2>
+        <h2 class="text-center mb-3">Our Services Overview</h2>
+        <!-- two columns 1 for text another for image -->
+        <div class="container mt-5 mb-5">
+          <div class="row g-4 ">
+            <div class="col-md-6">
+              <div class="card h-100 shadow-lg hover-lift transition">
+                <div class="card-body p-4">
+                  <h2 class="display-6 fw-bold mb-4">Our Services</h2>
+                  <ul class="list-unstyled">
+  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>End-to-end medical billing services to maximize revenue</li>
+  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Reduce administrative burden and ensure compliance</li>
+  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Patient eligibility verification</li>
+  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Accurate medical coding</li>
+  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Charge entry and claim submission</li>
+  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Payment posting and denial management</li>
+  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>AR follow-up and analysis</li>
+  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>AI-powered tools for fast, error-free processing</li>
+  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>In-house claims settlement software</li>
+  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Real-time visibility into billing workflows</li>
+  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Tailored services for clinics, diagnostic centers, and specialty practices</li>
+  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Seamless integration with any EHR or practice management system</li>
+  <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>Trusted partner handling revenue cycle from start to finish</li>
+</ul>                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 shadow-lg hover-lift transition">
+                <div class="card-body p-4" style="margin-top: 0.1in; position: relative;">
+                  <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/img/services.png" class="d-block w-100" alt="Service 1">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/services1.png" class="d-block w-100" alt="Service 2">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/services2.png" class="d-block w-100" alt="Service 3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+                  <a href="rcm.html" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-3">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
         <div class="row g-4 justify-content-center">
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 shadow-lg hover-lift transition" style="margin-bottom: 30px;">
