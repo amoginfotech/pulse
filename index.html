@@ -43,43 +43,18 @@
 
 <body>
   <link href="assets/css/whatsapp.css" rel="stylesheet">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo.png" alt="Algoprime Logo">
-        <h1 class="sitename">PULSE</h1>
-      </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html#hero" class="active">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li class="dropdown"><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="rcm.html">RCM Services</a></li>
-              <li><a href="credentialing.html">Credetntialing & Enrollment</a></li>
-              <li><a href="coding.html">Coding and Compliance</a></li>
-              <li><a href="analytics.html">Analytics & Reporting</a></li>
-              <li><a href="technology.html">Technology</a></li>
-            </ul>
-          </li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-          </script>
-    </div>
-  </header>
+  <div id="header-container"></div>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
 
   <a href="https://wa.me/+19175353956?text=Hi%20Algoprime,%20I'm%20interested%20in%20your%20services" class="whatsapp-float" target="_blank">
     <i class="bi bi-whatsapp"></i>
-  </a>
-
-  <!-- Hero Section -->
-  <section id="hero" class="d-flex align-items-center">
+  </a>="d-flex align-items-center">
     <div class="container">
       
       <div class="hero-section position-relative" style="width: 100vw; margin-left: calc(-50vw + 50%); height: 80vh; overflow: hidden; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/hero.png'); background-size: cover; background-position: center;">
